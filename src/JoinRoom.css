@@ -1,0 +1,71 @@
+.joinroom-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../src/assets/BlackCatBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.joinroom-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.room-card {
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.room-card .p-card-title {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.room-card .p-card-body {
+  padding: 0;
+}
+
+.room-card .p-card-content {
+  padding: 0;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-error {
+  background: rgba(255, 50, 50, 0.2);
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 3px solid #ff5252;
+}

@@ -1,0 +1,59 @@
+.chatroom-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.chatroom-card {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 192, 203, 0.3); 
+}
+
+.msg-container {
+  height: 300px;
+  overflow-y: auto;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.chat-msg {
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.chat-msg.own {
+  background-color: #daeaf583;
+  color: #000;
+  text-align: right;
+}
+
+.chat-msg.other {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+
+.input-area {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chat-input {
+  flex-grow: 1;
+}
+
+.chat-send-btn {
+  background-color: #daeaf583;
+  border: none;
+}
